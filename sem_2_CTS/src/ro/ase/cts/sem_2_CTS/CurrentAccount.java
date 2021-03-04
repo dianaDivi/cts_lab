@@ -21,18 +21,30 @@ public class CurrentAccount extends BankAccount{
 	@Override
 	public void deposit(double amount) {
 
-		this.balance=amount;
+		this.balance += amount;
 	}
 
 	@Override
-	public void withdraw(double amount) {
-		// TODO Auto-generated method stub
+	public void withdraw(double amount) throws InsufficientFundsException {
+		
+		if(this.balance>= amount) {
+			this.balance -= amount;
+		}else {
+			throw new InsufficientFundsException("fonduri insuficiente");
+		}
+		
 		
 	}
 
 	@Override
-	public void transfer(double amount, Account destinationq) {
-		// TODO Auto-generated method stub
+	public void transfer(double amount, Account destination) throws IlegalTransferException, InsufficientFundsException {
+		
+		if(((BankAccount)destination).iban.equals(this.iban)) {
+			throw new IlegalTransferException("conturilecoincid");
+		}else {
+			this.withdraw(amount);
+			destination.deposit(amount);
+		}
 		
 	}
 

@@ -2,7 +2,7 @@ package ro.ase.cts.sem_2_CTS;
 
 public abstract class BankAccount extends Account{
 
-	public double balance;
+	protected double balance;
 	protected String iban;
 	
 	public BankAccount() {
@@ -29,7 +29,10 @@ public abstract class BankAccount extends Account{
 
 
 
-	
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
 
 	
 }
