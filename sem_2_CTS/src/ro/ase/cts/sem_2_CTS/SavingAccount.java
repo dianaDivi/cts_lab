@@ -1,6 +1,17 @@
 package ro.ase.cts.sem_2_CTS;
 
-public class SavingAccount extends BankAccount{
+public class SavingAccount extends BankAccount {
+	
+
+	public SavingAccount() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public SavingAccount(double balance, String iban) {
+		super(balance, iban);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public void deposit() {
@@ -10,20 +21,23 @@ public class SavingAccount extends BankAccount{
 
 	@Override
 	public void deposit(double amount) {
-		// TODO Auto-generated method stub
+		this.balance+=amount;
 		
 	}
 
 	@Override
 	public void withdraw(double amount) throws InsufficientFundsException {
-		// TODO Auto-generated method stub
+		if(amount<=this.balance) {
+			this.balance-=amount;
+		}
+		
 		
 	}
 
 	@Override
 	public void transfer(double amount, Account destinationq)
 			throws IlegalTransferException, InsufficientFundsException {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
