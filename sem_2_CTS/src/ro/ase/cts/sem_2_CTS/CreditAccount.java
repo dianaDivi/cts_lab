@@ -1,6 +1,7 @@
 package ro.ase.cts.sem_2_CTS;
 
 public class CreditAccount  extends BankAccount{
+	public SMSNotificationServuce notificationService;
 
 	@Override
 	public void deposit() {
