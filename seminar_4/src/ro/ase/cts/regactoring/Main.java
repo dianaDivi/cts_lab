@@ -1,6 +1,6 @@
 package ro.ase.cts.regactoring;
 
-import ro.ase.cts.regactoring.EagherShoppingCartExample;
+
 
 public class Main {
 
