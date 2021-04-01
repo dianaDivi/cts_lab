@@ -12,7 +12,7 @@ public class TechProdactFcatory  extends AbstractProductFcatory{
 
 	@Override
 	public Product makeProduct() throws UnsupportedOperationException {
-		return new TechProduct("generic");
+		return (Product) new TechProduct.TechProductBuilder(0);
 	}
 
 	@Override
