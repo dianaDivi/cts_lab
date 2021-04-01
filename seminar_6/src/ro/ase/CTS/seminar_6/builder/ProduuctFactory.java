@@ -4,7 +4,7 @@ public class ProduuctFactory {
 
 	public Product makePorduct(String type, String productName) throws UnsupportedOperationException {
 		if(type.equalsIgnoreCase("tech")) {
-			return  new  TechProduct.TechProductBuilder(0).getProduct();
+			return (Product) new  TechProduct.TechProductBuilder(0);
 		}else if(type.equalsIgnoreCase("office")) {
 			return new OfficeProduct();
 		}else {

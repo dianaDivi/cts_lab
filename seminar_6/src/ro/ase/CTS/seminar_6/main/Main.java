@@ -32,7 +32,7 @@ public class Main {
 		}
 		
 		
-Cart myShoppingCart = Cart.getInstance("shopping");
+		Cart myShoppingCart = Cart.getInstance("shopping");
 		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("selectati categoria produse:\ntech - Produse tech \n office - Produse office");
