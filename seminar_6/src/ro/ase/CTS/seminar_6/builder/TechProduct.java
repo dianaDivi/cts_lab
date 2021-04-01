@@ -1,12 +1,14 @@
-package ro.ase.CTS.seminar_5.factory;
+package ro.ase.CTS.seminar_6.builder;
 
 public class TechProduct implements Product{
 	
+	int id;
+	String productName;
 	String manufacturere;
 	String model;
 	String displayType;
 	float price;
-	String productName;
+	
 	
 	private TechProduct() {
 		// TODO Auto-generated constructor stub

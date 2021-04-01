@@ -1,4 +1,4 @@
-package ro.ase.CTS.seminar_5.main;
+package ro.ase.CTS.seminar_6.main;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ import ro.ase.CTS.seminar_5.factory.TechProduct;
 public class Main {
 
 	public static void main(String[] args) {
-		Cart myShoppingCart=Cart.getInstance("shopping");
+		Cart myShoppingCart=ro.ase.CTS.seminar_6.clase.Cart.getInstance("shopping");
 		
 		
 		Product paperClip=new OfficeProduct();
@@ -39,16 +39,25 @@ Cart myShoppingCart = Cart.getInstance("shopping");
 		String userPreference = scan.nextLine();
 		Product myProduct = null;
 		
-		AbstractProductFcatory productFactory=null;
+		ro.ase.CTS.seminar_6.builder.AbstractProductFcatory productFactory=null;
 		if(userPreference!=null) {
 			if(userPreference.equalsIgnoreCase("tech")) {
 				productFactory=new TechProdactFcatory();
 			}
 			
 		}
+		System.out.println(productFactory.getCatalog());
 		myProduct=productFactory.makeProduct();
 			
 
+
+		if(myProduct != null) {
+			myShoppingCart.products.add(myProduct);
+		}
+		
+		for(Product p: myShoppingCart.products) {
+			System.out.println(p.getDescription());
+		}
 		
 //		}else {
 //			System.out.println("Optiune invalida.");
