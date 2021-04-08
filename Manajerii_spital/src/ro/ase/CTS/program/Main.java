@@ -42,8 +42,7 @@ public class Main {
 		AgentieStaticBlock agentieBlock=new AgentieStaticBlock();
 		System.out.println(agentieBlock.toString());
 		
-		AgentieInnerClass agentieInnerClass=A.getInstanta("Valeria", 333, 4);
-		System.out.println(agentieInnerClass.toString());
+		
 
 	}
 
