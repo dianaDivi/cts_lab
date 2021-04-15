@@ -1,4 +1,5 @@
 
-public class AbstractBackPartDecorater {
+public class AbstractBackPartDecorater extends AbstrackBackpack{
 
+	private AbstrackBackpack basicBackpack;
 }

@@ -1,4 +1,5 @@
 
-public class AbstrackBackpack {
+public abstract class AbstrackBackpack {
 
+	public abstract void pack();
 }

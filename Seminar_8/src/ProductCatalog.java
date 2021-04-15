@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class ProductCatalog extends CatalogComponent{
 	private ArrayList<CatalogComponent> products;
