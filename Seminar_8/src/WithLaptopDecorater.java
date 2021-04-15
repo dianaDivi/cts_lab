@@ -1,7 +1,15 @@
 
-public class WithLaptopDecorater extends AbstractBackPartDecorater {
+public class WithLaptopDecorater extends AbstractBackpackDecorator {
 
-	private AbstrackBackpack basicBacpack;
+	public WithLaptopDecorater(AbstractBackpack basicBackpack) {
+		super(basicBackpack);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void pack() {
+		this.basicBackpack.pack();
+		System.out.print(" + Laptop");
+	}
 	
-	public 
 }
