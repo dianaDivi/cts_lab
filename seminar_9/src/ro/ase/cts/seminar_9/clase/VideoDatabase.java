@@ -12,4 +12,26 @@ public class VideoDatabase {
 
 	}
 	
+	public ArrayList<YoutubeVideo> getVideoCollection(){
+		
+	}
+	
+	
+	public String getVideoInfo(int id) {
+		try {
+			Thread.sleep(2000);
+		}catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		for(YoutubeVideo video:videoCollection) {
+			if(id==video.getId()) {
+				StringBuilder videoDescription=new StringBuilder();
+				videoDescription.append(video.getTitle()).append("takes you").append(video.getDuration()).append("minutes to watch");
+				
+				return videoDescription.toString();
+			}
+		}
+		return "invalid id";
+	}
 }

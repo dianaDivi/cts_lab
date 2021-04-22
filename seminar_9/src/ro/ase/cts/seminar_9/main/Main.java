@@ -6,8 +6,9 @@ import ro.ase.cts.seminar_9.clase.YoutubeLibraryInterface;
 public class Main {
 
 	public static void main(String[] args) {
-	YoutubeLibraryInterface interface1=new YoutobeLabrary();
+	YoutubeLibraryInterface youtubeLib=new YoutobeLabrary();
 	
+	System.out.println(youtubeLib);
 	}
 
 }
