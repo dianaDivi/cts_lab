@@ -4,9 +4,10 @@ public class YoutubeLibraryProxy implements YoutubeLibraryInterface {
 
 	private YoutubeLibraryInterface libImplementation;
 	
-	public  YoutubeLibraryProxy() {
-		libImplementation=new YoutobeLabrary();
+	public YoutubeLibraryProxy() {
+		libImplementation = new YoutobeLabrary();
 	}
+	
 	@Override
 	public String listVideos() {
 		// TODO Auto-generated method stub
