@@ -12,7 +12,7 @@ public class Main {
 		double puncteBonus = modulMarketing.getBonus(100);
 		System.out.println("Numar puncte bonus: " + puncteBonus);
 		
-modulMarketing.setCurrentStrategy(new MarketingStrategyInterface() {
+		modulMarketing.setCurrentStrategy(new MarketingStrategyInterface() {
 			
 			@Override
 			public double calculateBonus(double base) {
