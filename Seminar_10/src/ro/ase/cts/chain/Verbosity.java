@@ -1,4 +1,4 @@
-package ro.ase.cts.clain;
+package ro.ase.cts.chain;
 
 public enum Verbosity {
 	INFO(1), DEBUG(2), ERROR(3);

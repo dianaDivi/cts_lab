@@ -1,4 +1,4 @@
-package ro.ase.cts.clain;
+package ro.ase.cts.chain;
 
 public abstract class AbstractLogger {
 	protected Verbosity level;
