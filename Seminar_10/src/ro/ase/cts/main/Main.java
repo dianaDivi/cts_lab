@@ -1,6 +1,7 @@
 package ro.ase.cts.main;
 
 import ro.ase.cts.chain.AbstractLogger;
+import ro.ase.cts.chain.LoggerChainFactory;
 import ro.ase.cts.chain.Verbosity;
 import ro.ase.cts.strategy.MarketingStrategyInterface;
 import ro.ase.cts.strategy.ModulMarketing;
