@@ -1,4 +1,4 @@
-package ro.ase.cts.Strategy;
+package ro.ase.cts.strategy;
 
 import java.util.Random;
 

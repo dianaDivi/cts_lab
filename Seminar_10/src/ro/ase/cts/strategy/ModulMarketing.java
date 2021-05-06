@@ -1,4 +1,4 @@
-package ro.ase.cts.Strategy;
+package ro.ase.cts.strategy;
 
 public class ModulMarketing {
 	private MarketingStrategyInterface currentStrategy;

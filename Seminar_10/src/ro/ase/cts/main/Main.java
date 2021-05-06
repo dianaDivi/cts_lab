@@ -1,8 +1,8 @@
 package ro.ase.cts.main;
 
-import ro.ase.cts.Strategy.MarketingStrategyInterface;
-import ro.ase.cts.Strategy.ModulMarketing;
-import ro.ase.cts.Strategy.RandomMarketingStrategy;
+import ro.ase.cts.strategy.MarketingStrategyInterface;
+import ro.ase.cts.strategy.ModulMarketing;
+import ro.ase.cts.strategy.RandomMarketingStrategy;
 
 public class Main {
 
