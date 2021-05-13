@@ -1,4 +1,4 @@
-package ro.ase.CTS.ex9.Strategy;
+package ro.ase.CTS.ex9.Proxy;
 
 public class Proxi implements IOperatoriRezervari {
 	private OperatoriRezervare operator;

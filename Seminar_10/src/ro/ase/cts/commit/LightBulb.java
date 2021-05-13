@@ -18,6 +18,7 @@ int lightIntensity = 0;
 		if(lightIntensity > 0) {
 			lightIntensity -- ;
 		}
+		System.out.println("light "+ lightIntensity );
 	}
 	
 	public void increaseLightIntensity() {
