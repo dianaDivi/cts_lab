@@ -31,7 +31,11 @@ public class Main {
 		System.out.println("Character hitpoints: " + myCharacter.getHitpoints());
 		myCharacter.setMemento(saveList.get(0));
 		System.out.println("Character hitpoints: " + myCharacter.getHitpoints());
-
+		System.out.println("---------------------------------------------------------");
+		DecimalFormatter decimalFormatter = new DecimalFormatter();
+		decimalFormatter.displayOutput(10);
+		HexFormatter hexFormatter = new HexFormatter();
+		hexFormatter.displayOutput(10);
 	
 
 	}
